@@ -19,6 +19,7 @@ class ZeroConfigGroup extends GroupHelper {
             return process.env.NODE_ENV;
         } else {
             if (this.args.mode) {
+                console.log(process.env.NODE_ENV);
                 return this.args.mode;
             }
             return PRODUCTION;
